@@ -29,24 +29,22 @@
 
         let currentTab = '';
         webButton.addEventListener('click', function (evt) {
-          text.setAttribute("value", "https://softmind.tech");
+          text.setAttribute("value", "https://www.oculus.com/experiences/quest/3719350301435548/");
           currentTab = 'web';
         });
         emailButton.addEventListener('click', function (evt) {
-          text.setAttribute("value", "hello@softmind.tech");
+          text.setAttribute("value", "noflinchgames@gmail.com");
           currentTab = 'email';
         });
-        profileButton.addEventListener('click', function (evt) {
-          text.setAttribute("value", "AR, VR solutions and consultation");
-          currentTab = 'profile';
+        ytButton.addEventListener('click', function (evt) {
+          text.setAttribute("value", "https://www.youtube.com/watch?v=HfNA16Prs2k");
+          currentTab = 'yt';
         });
-        locationButton.addEventListener('click', function (evt) {
-          console.log("loc");
-          text.setAttribute("value", "Vancouver, Canada | Hong Kong");
-          currentTab = 'location';
+        twitterButton.addEventListener('click', function (evt) {
+          text.setAttribute("value", "https://twitter.com/NoFlinchg");
+          currentTab = 'twitter';
         });
-
-        text.addEventListener('click', function (evt) {
+	text.addEventListener('click', function (evt) {
           if (currentTab === 'web') {
             window.location.href="https://softmind.tech";
           }
