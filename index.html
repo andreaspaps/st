@@ -33,39 +33,18 @@
           currentTab = 'web';
         });
         emailButton.addEventListener('click', function (evt) {
-          text.setAttribute("value", "noflinchgames@gmail.com");
+          window.open("mailto:"+"noflinchgames@gmail.com", '_blank');
           currentTab = 'email';
         });
         ytButton.addEventListener('click', function (evt) {
-          text.setAttribute("value", "https://www.youtube.com/watch?v=HfNA16Prs2k");
+          window.open("https://www.youtube.com/watch?v=HfNA16Prs2k", '_blank');
           currentTab = 'yt';
         });
         twitterButton.addEventListener('click', function (evt) {
-          text.setAttribute("value", "https://twitter.com/NoFlinchg");
+          window.open("https://twitter.com/NoFlinch", '_blank');
           currentTab = 'twitter';
         });
-	text.addEventListener('click', function (evt) {
-          if (currentTab === 'web') {
-            window.location.href="https://softmind.tech";
-          }
-        });
       }
-
-      function onClick( {target, data, object, time} ) {
-  // this event is called when any object from the scene is being clicked (i.e. tapped)
-  if (object.name === 'icon-website') {
-    window.open("https://www.oculus.com/experiences/quest/3719350301435548/", '_blank');
-  }
-  if (object.name === 'icon-email') {
-    window.open("mailto:"+"noflinchgames@gmail.com", '_blank');
-  }
-  if (object.name === 'icon-youtube') {
-    window.open("https://www.youtube.com/watch?v=HfNA16Prs2k", '_blank');
-  }
-  if (object.name === 'icon-twitter') {
-    window.open("https://twitter.com/NoFlinch", '_blank');
-  }
-}
       
       const showPortfolio = (done) => {
         const portfolio = document.querySelector("#portfolio-panel");
