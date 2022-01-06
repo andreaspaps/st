@@ -90,7 +90,7 @@
 
             setTimeout(() => {
               done();
-            }, 300);
+            }, 100);
           }
           portfolio.setAttribute("position", "0 " + y + " -0.01");
         }, 10);
@@ -233,7 +233,8 @@
           <video id="paintandquest-video-webm" autoplay="false" loop="false" src="./assets/card-example/portfolio/paintandquest.webm"></video>
           <img id="coffeemachine-preview" src="./assets/card-example/portfolio/coffeemachine-preview.png" />
           <img id="peak-preview" src="./assets/card-example/portfolio/peak-preview.png" />
-          
+	  
+	  <a-asset-item id="avatarModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.0.0/examples/image-tracking/assets/card-example/softmind/scene.gltf"></a-asset-item>          
         </a-assets>
 
         <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: 10000; objects: .clickable">
@@ -278,6 +279,8 @@
             animation="property: scale; to: 1.2 1.2 1.2; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"
           ></a-image>
 
+	  <a-gltf-model id="avatar" rotation="0 0 0" position="0 -0.25 0" scale="0.004 0.004 0.004" src="#avatarModel"></a-gltf-model>
+		
         </a-entity>
       </a-scene>
     </div>
